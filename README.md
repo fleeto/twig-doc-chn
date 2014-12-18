@@ -12,4 +12,4 @@
 
 - [设计者的Twig](twig_design.md)
 
-- [开发者的Twig](twid_dev.md)
+- [开发者的Twig](twig_dev.md)
