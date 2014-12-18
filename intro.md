@@ -20,11 +20,13 @@ Twig需要的最小运行环境为**PHP 5.2.4**。
 
 	composer require "twig/twig:~1.0"
 
-> 要了解其他的安装方式，可以阅读[安装](http://twig.sensiolabs.org/doc/installation.html)一节，其中还包含了Twig C扩展的安装方式。
+> 要了解其他的安装方式，可以阅读[安装](installation.md)一节，其中还包含了Twig C扩展的安装方式。
 
 ##基础API用法
 
 本节对Twig PHP API做一个简单介绍。
+
+```twig
 
 	require_once '/path/to/vendor/autoload.php';
 	
@@ -35,8 +37,8 @@ Twig需要的最小运行环境为**PHP 5.2.4**。
 	
 	echo $twig->render('index', array('name' => 'Fabien'));
 
-Twig使用一个**加载器**(```Twig_Loader_Array```)来定位模板文件，使用一个**环境**(Twig_Environment)来存储配置。
-```render()```方法的第一个参数指定了模板，后面的参数则为渲染提供了变量。
+Twig使用一个**加载器**(`Twig_Loader_Array`)来定位模板文件，使用一个**环境**(Twig_Environment)来存储配置。
+`render()`方法的第一个参数指定了模板，后面的参数则为渲染提供了变量。
 模板一般是保存在文件系统中，所以Twig提供了一个文件系统加载器：
 
 	$loader = new Twig_Loader_Filesystem('/path/to/templates');
